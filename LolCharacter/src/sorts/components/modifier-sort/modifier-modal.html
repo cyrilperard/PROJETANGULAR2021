@@ -1,0 +1,49 @@
+<h1 mat-dialog-title>Modifier un sort</h1>
+<div mat-dialog-content>
+  <div class="container">
+    <form class="modal-form" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+        <div class="container">
+            <div class="form-group col-5">
+              <!-- <mat-form-field class="full-width">
+                <input matInput placeholder="Identifiant" type="number" formControlName="id" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.id.errors }" />
+              </mat-form-field>
+              <div *ngIf="submitted && f.id.errors" class="invalid-feedback">
+                  <div *ngIf="f.id.errors.required">Champ manquant: un id est obligatoire</div>
+              </div> -->
+
+              <mat-form-field class="full-width">
+                <input matInput placeholder="Nom" type="text" formControlName="nom" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.nom.errors }" />
+              </mat-form-field>
+              <div *ngIf="submitted && f.nom.errors" class="invalid-feedback">
+                  <div *ngIf="f.nom.errors.required">Champ manquant: un nom est obligatoire</div>
+              </div>
+
+              <mat-form-field class="full-width">
+                <input matInput placeholder="Dégât" type="number" formControlName="degat" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.degat.errors }" />
+              </mat-form-field>
+              <div *ngIf="submitted && f.degat.errors" class="invalid-feedback">
+                  <div *ngIf="f.degat.errors.required">Champ manquant: le champ Dégât est obligatoire</div>
+              </div>
+
+
+              <mat-form-field class="full-width">
+                <input matInput placeholder="Ratio" type="number" formControlName="ratio" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.ratio.errors }" />
+              </mat-form-field>
+              <div *ngIf="submitted && f.ratio.errors" class="invalid-feedback">
+                  <div *ngIf="f.ratio.errors.required">Champ manquant: un ratio est obligatoire</div>
+              </div>
+
+              <mat-form-field class="full-width">
+                <input matInput placeholder="Description" type="text" formControlName="description" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.description.errors }" />
+              </mat-form-field>
+              <div *ngIf="submitted && f.description.errors" class="invalid-feedback">
+                  <div *ngIf="f.description.errors.required">Champ manquant: un valeur ap est obligatoire</div>
+              </div>
+              <button mat-raised-button (click)="onNoClick()" class="double" color="warn">Annuler</button>
+              <button mat-raised-button type="submit" class="double" color="primary">Modifier</button>
+              <!-- <button  class="btn btn-primary mt-1 w-100">Créer</button> -->
+            </div>
+        </div>
+    </form>
+  </div>
+</div>

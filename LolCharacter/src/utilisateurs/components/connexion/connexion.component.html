@@ -1,0 +1,39 @@
+
+<mat-card>
+  <h1 mat-dialog-title>Se connecter !</h1>
+  <div mat-dialog-content>
+    <div class="container">
+      <form class="modal-form" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+          <div class="container">
+              <div class="form-group col-5">
+                <mat-form-field class="full-width">
+                  <input class="full-width" matInput placeholder="Identifiant" type="text" formControlName="username" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
+                </mat-form-field>
+                <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                    <div *ngIf="f.username.errors.required"></div>
+                </div>
+
+                <mat-form-field class="full-width">
+                  <input class="full-width" matInput placeholder="Mot de passe" type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+                </mat-form-field>
+                <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                    <div *ngIf="f.mdp.errors.required"></div>
+                </div>
+                <button mat-raised-button type="submit" class="full-width" color="primary">Se connecter</button>
+              </div>
+          </div>
+      </form>
+    </div>
+  </div>
+</mat-card>
+
+<div class="center">
+  <p>L'interface de connexion (première liaison: un utilisateur possède plusieurs "Champions")</p>
+  <p>Impossible de contourner la connexion en passant par un autre URL: "http://127.0.0.1:3000/champions"</p>
+  <p>Comptes disponibles:</p>
+  <ul>
+    <li>"http://127.0.0.1:3000/utilisateurs"</li>
+    <li>Identifiant: <b>test</b> / Mot de passe: <b>test</b></li>
+    <li>Identifiant: <b>perard</b> / Mot de passe: <b>cyril</b></li>
+  </ul>
+</div>

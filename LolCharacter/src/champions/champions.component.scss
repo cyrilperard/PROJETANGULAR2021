@@ -1,0 +1,22 @@
+.material-icons{
+  color: black
+}
+
+.material-icons:hover{
+  cursor: pointer;
+  color:grey
+}
+
+.left{
+  float: left;
+}
+
+.mat-header-cell {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mat-cell {
+  text-align: center;
+  justify-content:center;
+}

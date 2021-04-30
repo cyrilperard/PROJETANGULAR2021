@@ -1,0 +1,24 @@
+<app-toolbar></app-toolbar>
+<app-sidebar></app-sidebar>
+<mat-sidenav-container class="example-container">
+  <mat-sidenav class="w-20" mode="side" opened>
+    <mat-list *ngIf="router.url !== '/connexion'">
+      <mat-list-item>
+        <button mat-raised-button color="primary" class="w-100" routerLink="/champions">Liste des champions</button>
+      </mat-list-item>
+      <mat-list-item>
+        <app-deconnexion></app-deconnexion>
+      </mat-list-item>
+      <p class="note">Precision:</p>
+      <p class="note">Pour l'utilisateur avec l'identifiant test, seulement le Champion "Karthus" possède des sorts déjà existant pour l'exemple.</p>
+     </mat-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+
+    <router-outlet>
+    </router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+

@@ -1,0 +1,48 @@
+
+
+<app-creer></app-creer>
+
+<div>
+  <mat-table [dataSource]="dataSource">
+    <ng-container matColumnDef="voir">
+      <mat-header-cell *matHeaderCellDef> <b>Voir / Ajouter des sorts </b> </mat-header-cell>
+      <mat-cell *matCellDef="let champion">
+        <button routerLink="sorts/{{champion.id}}" mat-raised-button class="full-width-90" color="primary"> GO </button>
+      </mat-cell>
+    </ng-container>
+    <!-- <ng-container matColumnDef="id">
+      <mat-header-cell *matHeaderCellDef> Identifiant </mat-header-cell>
+      <mat-cell *matCellDef="let champion"> {{champion.id}} </mat-cell>
+    </ng-container> -->
+    <ng-container matColumnDef="nom">
+      <mat-header-cell *matHeaderCellDef> Nom </mat-header-cell>
+      <mat-cell *matCellDef="let champion"> {{champion.nom}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="lv">
+      <mat-header-cell *matHeaderCellDef> Niveau </mat-header-cell>
+      <mat-cell *matCellDef="let champion"> {{champion.lv}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="hp">
+      <mat-header-cell *matHeaderCellDef> Point de vie </mat-header-cell>
+      <mat-cell *matCellDef="let champion"> {{champion.hp}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="ap">
+      <mat-header-cell *matHeaderCellDef> Puissance </mat-header-cell>
+      <mat-cell *matCellDef="let champion"> {{champion.ap}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="action">
+      <mat-header-cell *matHeaderCellDef> Action </mat-header-cell>
+      <mat-cell *matCellDef="let champion">
+      <app-modifier target="{{champion.id}}"></app-modifier>
+
+      <button mat-raised-button class="full-width-90" (click)="deleteChampion(champion.id)">
+          <i class="material-icons">
+            delete_outline
+          </i>
+      </button>
+      </mat-cell>
+    </ng-container>
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</div>

@@ -1,0 +1,37 @@
+
+<div>
+  <p class="head" *ngIf="champion">{{champion.nom}}</p>
+  <p class="head" *ngIf="champion">Niveau: {{champion.lv}}</p>
+  <p class="head" *ngIf="champion">Point de vie: {{champion.hp}}</p>
+  <p class="head" *ngIf="champion">Puissance: {{champion.ap}}</p>
+</div>
+
+<app-ajouter></app-ajouter>
+
+<div class="contain">
+  <mat-card *ngFor="let sort of sorts" class="card-sort float-left">
+    <mat-card-header>
+      <mat-card-title>{{sort.nom}}</mat-card-title>
+      <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
+    </mat-card-header>
+    <mat-card-content>
+      <p>Dégât: {{sort.degat}}</p>
+      <p>Ratio: {{sort.ratio}}</p>
+      <p>
+      {{sort.description}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <!-- target="sort.id" -->
+      <app-modifier target="{{sort.id}}"></app-modifier>
+      <button mat-button (click)="delete(sort.id)">
+      <i class="material-icons">
+        delete_outline
+      </i>
+      Supprimer
+    </button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
+

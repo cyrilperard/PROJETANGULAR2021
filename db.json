@@ -1,0 +1,179 @@
+{
+  "utilisateurs": [
+    {
+      "id": 1,
+      "username": "test",
+      "email": "test@test.fr",
+      "password": "test"
+    },
+    {
+      "id": 2,
+      "username": "perard",
+      "password": "cyril"
+    }
+  ],
+  "champions": [
+    {
+      "nom": "Karthus",
+      "lv": 18,
+      "hp": 999,
+      "ap": 100,
+      "id_user": "1",
+      "id": 1
+    },
+    {
+      "nom": "Amumu",
+      "lv": 18,
+      "hp": 123,
+      "ap": 111,
+      "id_user": "1",
+      "id": 2
+    },
+    {
+      "nom": "Zac",
+      "lv": 234,
+      "hp": 1234,
+      "ap": 1342,
+      "id_user": "1",
+      "id": 3
+    },
+    {
+      "nom": "Karma",
+      "lv": 13,
+      "hp": 13,
+      "ap": 24,
+      "id_user": "1",
+      "id": 4
+    },
+    {
+      "nom": "Soraka",
+      "lv": 12,
+      "hp": 41,
+      "ap": 213,
+      "id_user": "1",
+      "id": 5
+    },
+    {
+      "nom": "Urgot",
+      "lv": 13,
+      "hp": 42,
+      "ap": 13,
+      "id_user": "1",
+      "id": 6
+    },
+    {
+      "nom": "Nunu",
+      "lv": 13,
+      "hp": 24,
+      "ap": 12,
+      "id_user": "1",
+      "id": 7
+    },
+    {
+      "nom": "Sona",
+      "lv": 123,
+      "hp": 23,
+      "ap": 24,
+      "id_user": "1",
+      "id": 8
+    },
+    {
+      "nom": "Xerath",
+      "lv": 12,
+      "hp": 42,
+      "ap": 123,
+      "id_user": "1",
+      "id": 9
+    },
+    {
+      "nom": "Ashe",
+      "lv": 32,
+      "hp": 2,
+      "ap": 42,
+      "id_user": "1",
+      "id": 10
+    },
+    {
+      "nom": "Nidalee",
+      "lv": 23,
+      "hp": 23,
+      "ap": 23,
+      "id_user": "1",
+      "id": 11
+    },
+    {
+      "nom": "Lee Sin",
+      "lv": 23,
+      "hp": 43,
+      "ap": 2132,
+      "id_user": "1",
+      "id": 12
+    },
+    {
+      "nom": "XinZhao",
+      "lv": 23,
+      "hp": 421,
+      "ap": 2425,
+      "id_user": "1",
+      "id": 13
+    },
+    {
+      "nom": "Riven",
+      "lv": 24,
+      "hp": 12,
+      "ap": 24,
+      "id_user": "1",
+      "id": 14
+    },
+    {
+      "nom": "Lux",
+      "lv": 12,
+      "hp": 24,
+      "ap": 132,
+      "id_user": "2",
+      "id": 15
+    }
+  ],
+  "sorts": [
+    {
+      "nom": "Déni de mort",
+      "degat": 0,
+      "ratio": 0,
+      "description": "Lorsqu'il meurt, Karthus prend une forme spirituelle qui lui permet de continuer à lancer des sorts pendant 7 sec.",
+      "id_champion": "1",
+      "id": 1
+    },
+    {
+      "nom": "DÉVASTATION",
+      "degat": 293,
+      "ratio": 0.4,
+      "description": "Karthus crée une explosion à retardement, infligeant des dégâts aux ennemis proches.",
+      "id_champion": "1",
+      "id": 2
+    },
+    {
+      "nom": "Mur de douleur",
+      "degat": 0,
+      "ratio": 0,
+      "description": "Karthus crée un mur d'énergie. Les ennemis franchissant le mur voient leur vitesse de déplacement et leur résistance magique temporairement réduites.  E SOUILLURE Karthus vole passivement l'énergie de ses victimes, gagnant du mana à chaque élimination. Karthus peut aussi s'immerger dans les âmes de ses proies, infligeant des dégâts aux ennemis proches mais au prix d'une grande perte de mana.  R REQUIEM Après une canalisation de 3 secondes, Karthus inflige des dégâts à tous les champions ennemis.",
+      "id_champion": "1",
+      "id": 3
+    },
+    {
+      "nom": "SOUILLURE",
+      "degat": 89,
+      "ratio": 0.2,
+      "description": "Karthus vole passivement l'énergie de ses victimes, gagnant du mana à chaque élimination. Karthus peut aussi s'immerger dans les âmes de ses proies, infligeant des dégâts aux ennemis proches mais au prix d'une grande perte de mana.",
+      "id_champion": "1",
+      "id": 4
+    },
+    {
+      "nom": "REQUIEM",
+      "degat": 123,
+      "ratio": 23,
+      "description": "Après une canalisation de 3 secondes, Karthus inflige des dégâts à tous les champions ennemis.",
+      "id_champion": "1",
+      "id": 5
+    }
+  ]
+}
